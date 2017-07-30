@@ -3,6 +3,7 @@
 This application can be used to find duplicate files in a folder. Currently, the file extention it finds are hard coded to find .jpg and .mts files. Support for all other file extentions is progress
 
 ### To do:
+- Add command line arguments
 - Add support for all file formats
 - Add the option to delete duplicate files
 - Add logging
