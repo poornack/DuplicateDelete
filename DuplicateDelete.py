@@ -1,3 +1,7 @@
+#**********************************
+#Author:  Poorna Chander Kalidas
+#**********************************
+
 import hashlib
 import os
 import glob
@@ -110,12 +114,10 @@ dictOfDuplicates = findDuplicates(crc)
 print "List of duplicated found:"
 printDuplicateDict(dictOfDuplicates)
 
-
 #Deleting duplicate files is yet to be implemented
 raw_input("Confirm files to delete and press enter")
 deleteDuplicates(dictOfDuplicates)
 
-    
 #****************
 #  End Script
 #****************
