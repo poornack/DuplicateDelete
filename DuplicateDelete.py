@@ -1,3 +1,7 @@
+#**********************************
+#Author:  Poorna Chander Kalidas
+#**********************************
+
 import hashlib
 import os
 import glob
@@ -104,8 +108,6 @@ printDuplicateDict(dictOfDuplicates)
 
 #Deleting duplicate files is yet to be implemented
 
-
-    
 #****************
 #  End Script
 #****************
