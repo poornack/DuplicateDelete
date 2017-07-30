@@ -33,6 +33,15 @@ def printDuplicateDict(inputDict):
             
         print ""
         
+        
+        
+def deleteDuplicates(inputDict):
+    
+    for keys,values in inputDict.items():
+        for filename in values[1:]:
+            os.remove(filename)
+            print "Deleted " + filename
+        
 #Finds duplicates and enters it in a Dict and returns it     
 def findDuplicates(inputDict):
     
@@ -105,8 +114,9 @@ dictOfDuplicates = findDuplicates(crc)
 print "List of duplicated found:"
 printDuplicateDict(dictOfDuplicates)
 
-
 #Deleting duplicate files is yet to be implemented
+raw_input("Confirm files to delete and press enter")
+deleteDuplicates(dictOfDuplicates)
 
 #****************
 #  End Script
