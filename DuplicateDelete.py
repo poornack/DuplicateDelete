@@ -34,7 +34,7 @@ def printDuplicateDict(inputDict):
         print ""
         
         
-        
+#This function is still under testing      
 def deleteDuplicates(inputDict):
     
     for keys,values in inputDict.items():
@@ -115,8 +115,6 @@ print "List of duplicated found:"
 printDuplicateDict(dictOfDuplicates)
 
 #Deleting duplicate files is yet to be implemented
-raw_input("Confirm files to delete and press enter")
-deleteDuplicates(dictOfDuplicates)
 
 #****************
 #  End Script
