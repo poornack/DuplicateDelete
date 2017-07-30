@@ -8,7 +8,7 @@ This application can be used to find duplicate files in a folder. Currently, the
 - Add the option to delete duplicate files
 - Add logging
 - Add progress. Helpful for long operations.
-- Add searching through multiple directories as once
+- Add searching through multiple directories at once
 
 **How it works:** The CRC of each file in the directory is read and compared with the other files' CRC. The file name does not have to be similar.
 
