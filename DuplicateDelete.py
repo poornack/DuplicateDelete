@@ -6,6 +6,7 @@ import hashlib
 import os
 import glob
 import string
+from send2trash import send2trash
 
 #*************
 #  Begin Def
@@ -39,7 +40,7 @@ def deleteDuplicates(inputDict):
     
     for keys,values in inputDict.items():
         for filename in values[1:]:
-            os.remove(filename)
+            send2trash(filename)
             print "Deleted " + filename
         
 #Finds duplicates and enters it in a Dict and returns it     
@@ -114,7 +115,10 @@ dictOfDuplicates = findDuplicates(crc)
 print "List of duplicated found:"
 printDuplicateDict(dictOfDuplicates)
 
-#Deleting duplicate files is yet to be implemented
+#Delete duplicates
+raw_input("Review files to delete and press enter.")
+deleteDuplicates(dictOfDuplicates)
+
 
 #****************
 #  End Script
